@@ -1,5 +1,4 @@
 # Node.js
-
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -8,7 +7,7 @@ trigger:
 - master
 
 variables:
-  azureSubscription: 'confidential'
+  azureSubscription: 'Ansalemo(4388fa06-bf66-4497-82c2-991ba75ecb97)'
   webAppName: nextjsfrontend
   environment: $(environmentName)
   vmImageName: 'ubuntu-latest'
