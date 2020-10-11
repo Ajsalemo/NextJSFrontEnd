@@ -1,1 +1,6 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+## Experimenting with Next.js and DevOps integration.
+
+https://nextjsfrontend.netlify.app/
+<br>
+https://nextjsfrontend.azurewebsites.net/
+
