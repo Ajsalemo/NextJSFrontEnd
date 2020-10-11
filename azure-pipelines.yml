@@ -27,10 +27,10 @@ stages:
         versionSpec: '10.x'
       displayName: 'Install node.js'
 
-    - script: yarn
+    - script: npm install
       displayName: 'Install dependencies'
     
-    - script: yarn export
+    - script: npm run build
       displayName: 'Export production build'
 
     - task: ArchiveFiles@2
@@ -67,5 +67,5 @@ stages:
               appName: $(webAppName)
               runtimeStack: 'NODE|10.10'
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              startUpCommand: 'yarn start'
+              startUpCommand: 'npm run start'
 
