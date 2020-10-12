@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "node_modules/next/dist/bin/next start -p 8080"
   },
   "dependencies": {
@@ -14,6 +14,7 @@
     "next-optimized-images": "^2.6.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "serve": "^11.3.2",
     "tailwindcss": "^1.8.13"
   },
   "devDependencies": {
