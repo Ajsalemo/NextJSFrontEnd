@@ -3,15 +3,15 @@ import { Fragment } from "react";
 const Navbar = () => (
   <Fragment>
     <nav className="inset-x-0 top-0 h-16 flex">
-      <div className="bg-black w-1/4 h-24 relative"></div>
-      <div className="bg-gray-700 w-1/4 h-24 relative"></div>
-      <div className="bg-gray-500 w-1/4 h-24 relative"></div>
-      <div className="bg-gray-700 w-1/4 h-24 relative"></div>
-      <div className="bg-black w-1/4 h-24 relative"></div>
+      <div className="bg-black w-1/4 h-24 relative div-blocks"></div>
+      <div className="bg-gray-700 w-1/4 h-24 relative div-blocks"></div>
+      <div className="bg-gray-500 w-1/4 h-24 relative div-blocks"></div>
+      <div className="bg-gray-700 w-1/4 h-24 relative div-blocks"></div>
+      <div className="bg-black w-1/4 h-24 relative div-blocks"></div>
     </nav>
     {/* Styling used for the navbar blocks */}
     <style jsx>{`
-      div:before {
+       .div-blocks:before {
         content: "";
         position: absolute;
         background: black;
