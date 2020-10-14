@@ -1,7 +1,11 @@
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      inset: {
+        "-16": "-4rem",
+      },
+    },
   },
   variants: {},
   plugins: [],

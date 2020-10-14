@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 const Navbar = () => (
   <Fragment>
-    <nav className="inset-x-0 top-0 h-16 flex">
+    <nav className="inset-x-0 top-0 h-16 flex mb-8">
       <div className="bg-black w-1/4 h-24 relative div-blocks"></div>
       <div className="bg-gray-700 w-1/4 h-24 relative div-blocks"></div>
       <div className="bg-gray-500 w-1/4 h-24 relative div-blocks"></div>
