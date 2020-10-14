@@ -5,6 +5,9 @@ module.exports = {
       inset: {
         "-16": "-4rem",
       },
+      width: {
+        "fit-content": "fit-content",
+      },
     },
   },
   variants: {},
