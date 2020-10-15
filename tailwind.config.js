@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       inset: {
         "-16": "-4rem",
+        "12": "3rem",
       },
       width: {
         "fit-content": "fit-content",
@@ -11,5 +12,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/ui")],
 };
