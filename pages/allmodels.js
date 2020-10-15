@@ -15,9 +15,13 @@ export default function allModelsPage() {
 
       <div className="bg-gray-800 h-auto sm:h-screen text-white">
         <Navbar />
-        <div className="grid gap-4 grid-cols-2 gap-3 sm:grid-cols-3 text-center mt-4">
+        <div className="grid gap-4 grid-cols-2 gap-3 sm:grid-cols-3 text-center pt-16">
           {allModels.map((model, i) => (
-            <Link href="/" className="inline-block" key={i}>
+            <Link
+              href={`/cars/${model.type}`}
+              className="inline-block text-lg"
+              key={i}
+            >
               <a key={i}>
                 {model.type} {model.model}
               </a>

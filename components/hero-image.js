@@ -1,14 +1,18 @@
-export default function HeroImage({ path }) {
+import Navbar from "./navbar";
+import Footer from "./footer";
+
+export default function HeroImage({ children, path }) {
   return (
-    <div className="relative">
-      <img
-        src={require(`images/${path}?trace`).trace}
-        className="absolute top-0 left-0"
-      />
-      <img
-        src={require(`images/${path}?jpg`)}
-        className="absolute top-0 left-0"
-      />{" "}
+    <div
+      className="-top-16 h-screen"
+      style={{
+        backgroundImage: `url(${path})`,
+        backgroundPosition: `center`,
+      }}
+    >
+      <Navbar />
+      {children}
+      <Footer />
     </div>
   );
 }

@@ -1,12 +1,18 @@
-import { getAllCarMarkdown, getAllCarMarkdownIds } from '../../lib/cars'
+import { getAllCarMarkdown, getAllCarMarkdownIds } from "../../lib/cars";
+import Head from "next/head";
+import { Fragment } from "react";
+import HeroImage from "../../components/hero-image";
 
 export default function Cars({ carData }) {
+  const getCarDataImage = require(`images/${carData.images}.jpg?jpg`);
   return (
-      <div>
-          <p>{carData.title}</p>
-          <p>{carData.type}</p>
-          <p>{carData.model}</p>
-      </div>
+    <Fragment>
+      <Head>
+        <title>{carData.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <HeroImage path={getCarDataImage} />
+    </Fragment>
   );
 }
 
@@ -19,10 +25,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const carData = getAllCarMarkdown(params.id)
-    return {
-      props: {
-        carData
-      }
-    }
+  const carData = getAllCarMarkdown(params.id);
+  return {
+    props: {
+      carData,
+    },
+  };
 }

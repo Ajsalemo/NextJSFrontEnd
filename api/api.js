@@ -1,102 +1,102 @@
 export const allModels = [
   {
-    type: "E26",
+    type: "e26",
     model: "M1",
   },
   {
-    type: "E12",
+    type: "e12",
     model: "M535i",
   },
   {
-    type: "E24",
+    type: "e24",
     model: "M635 CSi",
   },
   {
-    type: "E28(M531i)",
+    type: "e28(M531i)",
     model: "M535i",
   },
   {
-    type: "E28",
+    type: "e28",
     model: "M5",
   },
   {
-    type: "E30",
+    type: "e30",
     model: "M3",
   },
   {
-    type: "E34",
+    type: "e34",
     model: "M5",
   },
   {
-    type: "E31",
+    type: "e31",
     model: "M8",
   },
   {
-    type: "E36",
+    type: "e36",
     model: "M3",
   },
   {
-    type: "E36/7",
+    type: "e36/7",
     model: "M Roadster",
   },
   {
-    type: "E36/8",
+    type: "e36/8",
     model: "M Coupe",
   },
   {
-    type: "E39",
+    type: "e39",
     model: "M5",
   },
   {
-    type: "E46",
+    type: "e46",
     model: "M3",
   },
   {
-    type: "E60",
+    type: "e60",
     model: "M5",
   },
   {
-    type: "E61",
+    type: "e61",
     model: "M5",
   },
   {
-    type: "E63",
+    type: "e63",
     model: "M6",
   },
   {
-    type: "E64",
+    type: "e64",
     model: "M6",
   },
   {
-    type: "E85",
+    type: "e85",
     model: "Z4 M Roadster",
   },
   {
-    type: "E86",
+    type: "e86",
     model: "Z4 M Roadster",
   },
   {
-    type: "E90",
+    type: "e90",
     model: "M3",
   },
   {
-    type: "E92",
+    type: "e92",
     model: "M3 Coupe",
   },
   {
-    type: "E93",
+    type: "e93",
     model: "M3 Convertible",
   },
   {
-    type: "E82",
+    type: "e82",
     model: "1M",
   },
   {
-    type: "E70",
+    type: "e70",
     model: "X5 M",
   },
   {
-    type: "E71",
+    type: "e71",
     model: "X6 M",
   },
   {
