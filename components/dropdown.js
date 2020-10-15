@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Dropdown() {
   const [isOpen, isOpenFunction] = useState(false);
@@ -9,22 +10,22 @@ export default function Dropdown() {
         onClick={() => isOpenFunction(!isOpen)}
         onBlur={() => isOpenFunction(!isOpen)}
       >
-          ///
+        <span className="text-blue-300 font-black">/</span>
+        <span className="text-purple-700 font-black">/</span>
+        <span className="text-red-600 font-black">/</span>{" "}
       </button>
       {isOpen ? (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl top-12">
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
-          >
-            ///BMW Performance Models
-          </a>
+          <Link href="/">
+            <a className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">
+              Home
+            </a>
+          </Link>
+          <Link href="/allmodels">
+            <a className="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">
+              ///BMW Performance Models
+            </a>
+          </Link>
         </div>
       ) : null}
     </div>
