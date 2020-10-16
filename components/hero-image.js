@@ -11,7 +11,6 @@ export default function HeroImage({ children, path }) {
       }}
     >
       <Navbar />
-      {children}
       <Footer />
     </div>
   );
