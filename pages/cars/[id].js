@@ -1,8 +1,8 @@
-import { getAllCarMarkdown, getAllCarMarkdownIds } from "../../lib/cars";
 import Head from "next/head";
 import { Fragment } from "react";
-import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import Navbar from "../../components/navbar";
+import { getAllCarMarkdown, getAllCarMarkdownIds } from "../../lib/cars";
 
 export default function Cars({ carData }) {
   const getCarDataImageOne = require(`images/${carData.imageOne}.jpg?jpg`);
@@ -64,7 +64,7 @@ export default function Cars({ carData }) {
             <span className="text-red-600">Designer:</span> {carData.designer}
           </h3>
           <h3 className="sm:text-3xl text-1xl bg-black text-white">
-            {carData.body_style}
+          <span className="text-red-600">Body Type:</span> {carData.body_style}
           </h3>
           <h3 className="sm:text-3xl text-1xl bg-black text-white">
             <span className="text-red-600">Length:</span> {carData.length}
