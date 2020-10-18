@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
+import Footer from "../../components/footer/footer";
+import Navbar from "../../components/navbar/navbar";
 import CarTemplate from "../../components/car-template";
 import { getAllCarMarkdown, getAllCarMarkdownIds } from "../../lib/cars";
 
