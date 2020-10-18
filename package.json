@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "node_modules/next/dist/bin/next start -p 8080"
+    "start": "node_modules/next/dist/bin/next start -p 8080",
+    "test": "jest"
   },
   "dependencies": {
     "@tailwindcss/ui": "^0.6.2",
@@ -22,6 +23,12 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@testing-library/dom": "^7.26.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "babel-jest": "^26.5.2",
+    "jest": "^26.5.3",
+    "jest-dom": "^4.0.0",
     "postcss-preset-env": "^6.7.0"
   }
 }
