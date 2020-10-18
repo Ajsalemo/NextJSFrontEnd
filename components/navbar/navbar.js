@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Link from "next/link";
-import Dropdown from "./dropdown";
+import Dropdown from "../dropdown";
 
 export default function Navbar() {
   return (

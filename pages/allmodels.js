@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
+import Footer from "../components/footer/footer";
+import Navbar from "../components/navbar/navbar";
 import { Fragment } from "react";
 import { allModels } from "../api/api";
 import Link from "next/link";
 
-export default function allModelsPage() {
+export default function AllModelsPage() {
   return (
     <Fragment>
       <Head>
