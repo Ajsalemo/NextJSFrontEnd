@@ -12,10 +12,6 @@ export const allModels = [
     model: "M635 CSi",
   },
   {
-    type: "e28(M531i)",
-    model: "M535i",
-  },
-  {
     type: "e28",
     model: "M5",
   },
