@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Fragment } from "react";
 import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
-import CarTemplate from "../../components/car-template";
+import CarTemplate from "../../components/car-template/car-template";
 import { getAllCarMarkdown, getAllCarMarkdownIds } from "../../lib/cars";
 
 export default function Cars({ carData }) {
