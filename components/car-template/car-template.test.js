@@ -36,12 +36,10 @@ describe("CarTemplate", () => {
     expect(screen.getByRole("heading", { name: /ENGINE:/i }));
     expect(screen.getByRole("heading", { name: /ASSEMBLY:/i }));
   });
-});
 
-describe("CarTemplate", () => {
   it("renders with proper h3 headings", () => {
     render(<CarTemplate carData={carData} />);
 
-    screen.debug(screen.getAllByRole("heading", { level: 3 }))
+    screen.debug(screen.getAllByRole("heading", { level: 3 }));
   });
 });

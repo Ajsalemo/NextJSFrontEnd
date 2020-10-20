@@ -9,6 +9,7 @@ export default function Dropdown() {
         className="absolute right-0 m-4 h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white sm:hidden"
         onClick={() => isOpenFunction(!isOpen)}
         onBlur={() => isOpenFunction(!isOpen)}
+        aria-label="Dropdown button"
       >
         <span className="text-blue-300 font-black">/</span>
         <span className="text-purple-700 font-black">/</span>
