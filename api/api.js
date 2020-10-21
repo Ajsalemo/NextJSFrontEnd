@@ -24,10 +24,6 @@ export const allModels = [
     model: "M5",
   },
   {
-    type: "e31",
-    model: "M8",
-  },
-  {
     type: "e36",
     model: "M3",
   },
