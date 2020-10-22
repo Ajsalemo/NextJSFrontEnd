@@ -28,7 +28,7 @@ export const allModels = [
     model: "M3",
   },
   {
-    type: "e36/7",
+    type: "e36-7",
     model: "M Roadster",
   },
   {
