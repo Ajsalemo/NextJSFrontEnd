@@ -32,7 +32,7 @@ export const allModels = [
     model: "M Roadster",
   },
   {
-    type: "e36/8",
+    type: "e36-8",
     model: "M Coupe",
   },
   {

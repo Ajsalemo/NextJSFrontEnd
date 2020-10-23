@@ -1,7 +1,7 @@
 export default function CarTemplate({ carData, getCarDataImageOne, getCarDataImageTwo }) {
   return (
     <div className="bg-gray-800">
-      <img src={getCarDataImageOne} alt={carData.type} />
+      <img src={getCarDataImageOne} alt={carData.type} className="m-0 m-auto"/>
       <h1 className="sm:text-6xl bg-black text-white text-3xl">
         {carData.title}
       </h1>
@@ -30,7 +30,7 @@ export default function CarTemplate({ carData, getCarDataImageOne, getCarDataIma
         </h3>
       </div>
       <div className="h-16 bg-black"></div>
-      <img src={getCarDataImageTwo} alt={carData.type} />
+      <img src={getCarDataImageTwo} alt={carData.type}/>
       <div className="h-16 bg-black"></div>
       <div className="pb-24 pb-16 text-center w-fit-content my-0 mx-auto border-l-2 border-black">
         <h2 className="sm:text-4xl text-2xl text-white">ENGINE:</h2>
