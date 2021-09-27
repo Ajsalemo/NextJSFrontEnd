@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start -p 8080",
+    "start": "concurrently \"next start -p 8080\" \"echo 'Concurrently is working'\"",
     "test": "jest"
   },
   "dependencies": {
-    "@tailwindcss/ui": "^0.6.2",
+    "concurrently": "^6.2.2",
     "gray-matter": "^4.0.2",
     "image-trace-loader": "^1.0.2",
     "imagemin-mozjpeg": "^9.0.0",
