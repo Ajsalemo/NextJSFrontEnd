@@ -37,7 +37,10 @@ stages:
 
     - script: npm install
       displayName: 'Install dependencies'
-    
+
+    - script: npm install -g concurrently
+      displayName: 'Install concurrently for global use'
+
     - script: npm run build
       displayName: 'Export production build'
 
