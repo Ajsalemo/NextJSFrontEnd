@@ -38,11 +38,6 @@ stages:
     - script: npm install
       displayName: 'Install dependencies'
 
-    - task: Npm@1
-      inputs:
-        command: 'custom'
-        customCommand: 'install concurrently'
-
     - script: npm run build
       displayName: 'Export production build'
 
