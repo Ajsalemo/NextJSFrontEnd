@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "concurrently \"next start -p 8080\" \"echo 'Concurrently is working'\"",
+    "start": "concurrently \"node_modules/next/dist/bin/next start -p 8080\" \"echo 'Concurrently is working'\"",
     "test": "jest"
   },
   "dependencies": {
