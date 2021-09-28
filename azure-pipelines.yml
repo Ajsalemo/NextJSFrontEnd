@@ -76,7 +76,6 @@ stages:
               runtimeStack: 'NODE|14-lts'
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
               startUpCommand: 'npm run start'
-              InlineScript: 'export NODE_PATH=/home/site/wwwroot/node_modules:$NODE_PATH'
 
 
 
