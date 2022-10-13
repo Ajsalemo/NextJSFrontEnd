@@ -28,7 +28,7 @@ jobs:
           yarn run test 
 
       - name: Zip all files for upload between jobs
-        run: zip --symlinks -r next.zip ./*
+        run: zip --symlinks next.zip ./* .next -qr 
                 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
